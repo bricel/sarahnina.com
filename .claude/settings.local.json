@@ -5,7 +5,8 @@
       "Bash(mkdir:*)",
       "Bash(curl:*)",
       "Bash(grep:*)",
-      "Bash(wget:*)"
+      "Bash(wget:*)",
+      "Bash(echo)"
     ],
     "deny": []
   }

@@ -1,0 +1,425 @@
+/* Sarah Nina Meridor Portfolio - Extracted Theme from Original Site */
+
+/* Font Import */
+@import url('../fonts/local-fonts.css');
+
+/* CSS Variables - Extracted from Original Site */
+:root {
+  /* Original Color Palette */
+  --color_0: 229,229,228;    /* Light gray background */
+  --color_1: 0,0,0;          /* Pure black */
+  --color_2: 69,69,69;       /* Dark gray */
+  --color_5: 239,218,206;    /* Light peach/cream */
+  --color_7: 171,171,171;    /* Medium gray */
+  --color_8: 114,114,114;    /* Medium-dark gray */
+  --color_11: 229,229,228;   /* Light background */
+  --color_14: 57,57,57;      /* Very dark gray */
+  --color_15: 0,0,0;         /* Primary text color */
+  --color_16: 193,193,193;   /* Light gray */
+  --color_31: 247,237,231;   /* Very light cream */
+  --color_32: 239,218,206;   /* Light cream */
+  --color_33: 212,155,122;   /* Medium beige */
+  --color_34: 168,96,55;     /* Brown accent */
+  --color_35: 84,48,27;      /* Dark brown */
+  
+  /* Typography Variables */
+  --font_0: normal normal normal 22px/1.41em questrial,sans-serif;
+  --font_1: normal normal normal 14px/1.79em questrial,sans-serif;
+  --font_2: normal normal normal 28px/1.375em questrial,sans-serif;
+  --font_3: normal normal normal 88px/1.2em questrial,sans-serif;
+  --font_4: normal normal normal 72px/1.25em questrial,sans-serif;
+  --font_5: normal normal normal 50px/1.34em questrial,sans-serif;
+  --font_6: normal normal normal 40px/1.35em questrial,sans-serif;
+  --font_7: normal normal normal 20px/1.67em questrial,sans-serif;
+  --font_8: normal normal normal 18px/1.75em questrial,sans-serif;
+  --font_9: normal normal normal 15px/1.875em questrial,sans-serif;
+  --font_10: normal normal normal 14px/1.79em questrial,sans-serif;
+  
+  /* Button Variables */
+  --button-bg: rgb(61,155,233);
+  --button-bg-hover: rgb(43,104,156);
+  --button-text: rgb(255,255,255);
+  --button-font: normal normal normal 14px/1.4em raleway,sans-serif;
+  --button-radius: 20px;
+  --button-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  --button-border: rgb(43,104,156);
+  
+  /* Layout Variables */
+  --site-width: 980px;
+  
+  /* Convenient Color Functions */
+  --bg-light: rgb(var(--color_0));
+  --bg-cream: rgb(var(--color_32));
+  --text-primary: rgb(var(--color_15));
+  --text-dark-gray: rgb(var(--color_2));
+  --text-medium-gray: rgb(var(--color_8));
+  --accent-brown: rgb(var(--color_34));
+}
+
+/* Global Reset with Original Site Colors */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Questrial', Arial, Helvetica, sans-serif;
+  font: var(--font_1);
+  color: var(--text-primary);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
+
+/* Typography Hierarchy - Based on Original Site */
+h1 {
+  font: var(--font_3);
+  margin: 0 0 1em 0;
+  color: var(--text-primary);
+}
+
+h2 {
+  font: var(--font_4);
+  margin: 0 0 0.8em 0;
+  color: var(--text-primary);
+}
+
+h3 {
+  font: var(--font_5);
+  margin: 0 0 0.7em 0;
+  color: var(--text-primary);
+}
+
+h4 {
+  font: var(--font_6);
+  margin: 0 0 0.6em 0;
+  color: var(--text-primary);
+}
+
+h5 {
+  font: var(--font_2);
+  margin: 0 0 0.5em 0;
+  color: var(--text-primary);
+}
+
+h6 {
+  font: var(--font_0);
+  margin: 0 0 0.5em 0;
+  color: var(--text-primary);
+}
+
+p {
+  font: var(--font_8);
+  margin: 0 0 1em 0;
+  color: var(--text-primary);
+}
+
+.text-large {
+  font: var(--font_0);
+}
+
+.text-medium {
+  font: var(--font_7);
+}
+
+.text-regular {
+  font: var(--font_8);
+}
+
+.text-small {
+  font: var(--font_9);
+}
+
+.text-caption {
+  font: var(--font_10);
+}
+
+/* Site Container */
+#SITE_CONTAINER {
+  min-height: 100vh;
+  position: relative;
+  max-width: var(--site-width);
+  margin: 0 auto;
+  background-color: var(--bg-light);
+}
+
+/* Header Styles with Original Theme */
+.SITE_HEADER {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(var(--color_0), 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-container {
+  max-width: var(--site-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.artist-name h1 {
+  margin: 0;
+  font: var(--font_0);
+  letter-spacing: 1px;
+}
+
+.artist-name a {
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.artist-name a:hover {
+  color: var(--text-dark-gray);
+}
+
+/* Navigation with Original Styling */
+.main-nav .nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-primary);
+  font: var(--font_10);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+  padding: 10px 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-dark-gray);
+  border-bottom: 1px solid var(--text-dark-gray);
+}
+
+/* Button Styles - Matching Original */
+.btn,
+button,
+input[type="submit"] {
+  font: var(--button-font);
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: 0px solid var(--button-border);
+  border-radius: var(--button-radius);
+  box-shadow: var(--button-shadow);
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all .2s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+  background: var(--button-bg-hover);
+  border-color: var(--button-bg);
+}
+
+.btn:focus,
+button:focus,
+input[type="submit"]:focus {
+  outline: none;
+  box-shadow: var(--button-shadow), 0 0 0 2px #116dff;
+}
+
+/* Main Content */
+.PAGES_CONTAINER {
+  margin-top: 80px;
+  padding-top: 20px;
+  background-color: var(--bg-light);
+}
+
+/* Gallery Sections with Original Colors */
+.gallery-section {
+  max-width: var(--site-width);
+  margin: 0 auto 80px;
+  padding: 0 20px;
+}
+
+.gallery-section h2 {
+  text-align: center;
+  font: var(--font_5);
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.gallery-item {
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background: var(--bg-cream);
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-image,
+.gallery-image-large,
+.artwork-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image,
+.gallery-item:hover .gallery-image-large,
+.gallery-item:hover .artwork-image {
+  transform: scale(1.05);
+}
+
+/* Artist Statement Section */
+.artist-statement {
+  max-width: 800px;
+  margin: 0 auto 80px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.statement-content {
+  background: var(--bg-cream);
+  padding: 60px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.statement-featured-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.expandable-text p {
+  font: var(--font_8);
+  margin-bottom: 20px;
+  color: var(--text-medium-gray);
+  font-weight: 300;
+}
+
+.expandable-text p:last-child {
+  margin-bottom: 0;
+}
+
+/* Slideshow/Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--bg-cream);
+  color: var(--text-primary);
+  margin-bottom: 40px;
+}
+
+.hero-text p {
+  font: var(--font_7);
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  :root {
+    --font_3: normal normal normal 48px/1.2em questrial,sans-serif;
+    --font_4: normal normal normal 36px/1.25em questrial,sans-serif;
+    --font_5: normal normal normal 28px/1.34em questrial,sans-serif;
+  }
+  
+  .navigation-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .main-nav .nav-list {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .statement-content {
+    padding: 40px 20px;
+  }
+  
+  .gallery-section h2 {
+    font: var(--font_6);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 40px 15px;
+  }
+  
+  .hero-text p {
+    font: var(--font_8);
+  }
+  
+  .statement-content {
+    padding: 30px 20px;
+  }
+}
+
+/* Loading Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.gallery-section,
+.artist-statement {
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* News Section */
+.news-featured-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Color Utility Classes */
+.bg-light { background-color: var(--bg-light); }
+.bg-cream { background-color: var(--bg-cream); }
+.text-primary { color: var(--text-primary); }
+.text-dark-gray { color: var(--text-dark-gray); }
+.text-medium-gray { color: var(--text-medium-gray); }
+.accent-brown { color: var(--accent-brown); }

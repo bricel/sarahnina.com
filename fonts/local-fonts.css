@@ -1,0 +1,16 @@
+/* Local Font Definitions */
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./questrial-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./raleway-regular.ttf') format('truetype');
+}
