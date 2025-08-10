@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found | Sarah Nina Meridor</title>
+    <meta name="description" content="The page you're looking for could not be found.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/renderer.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='24' font-size='24'%3E🎨%3C/text%3E%3C/svg%3E">
+    
+    <style>
+        .error-container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .error-content {
+            max-width: 600px;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: 300;
+            margin: 0;
+            opacity: 0.8;
+        }
+        
+        .error-message {
+            font-size: 24px;
+            font-weight: 300;
+            margin: 20px 0;
+        }
+        
+        .error-description {
+            font-size: 16px;
+            margin: 20px 0 40px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+        
+        .back-home {
+            display: inline-block;
+            padding: 15px 30px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .back-home:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 80px;
+            }
+            
+            .error-message {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <h1 class="error-code">404</h1>
+            <h2 class="error-message">Page Not Found</h2>
+            <p class="error-description">
+                The page you're looking for seems to have vanished into the creative ether. 
+                Like a masterpiece that exists only in the artist's imagination, 
+                this page cannot be found in our current reality.
+            </p>
+            <a href="/" class="back-home">Return to Gallery</a>
+        </div>
+    </div>
+    
+    <script>
+        // Simple redirect after 10 seconds
+        setTimeout(() => {
+            if (confirm('Would you like to be redirected to the homepage?')) {
+                window.location.href = '/';
+            }
+        }, 10000);
+    </script>
+</body>
+</html>

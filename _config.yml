@@ -1,0 +1,58 @@
+# GitHub Pages Configuration for Sarah Nina Meridor Portfolio
+
+# Site settings
+title: "Sarah Nina Meridor - Artist Portfolio"
+description: "Artist Sarah Nina Meridor's Artwork, Paintings, Exhibitions"
+url: "https://www.sarahnina.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - sarahnina_original.html
+  - .claude/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  artworks:
+    output: true
+    permalink: /:collection/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      author: "Sarah Nina Meridor"
+      layout: "default"
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+author:
+  name: "Sarah Nina Meridor"
+  email: "info@sarahnina.com"
+  
+social:
+  name: "Sarah Nina Meridor"
+  links:
+    - "https://www.sarahnina.com"
+
+# Analytics (if needed in future)
+# google_analytics: "G-XXXXXXXXXX"

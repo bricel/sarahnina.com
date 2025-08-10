@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.sarahnina.com/sitemap.xml
+
+# Common crawl delays
+Crawl-delay: 1
+
+# Disallow common admin/system paths (not applicable for static site, but good practice)
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow access to assets
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /fonts/
