@@ -92,38 +92,6 @@ python -m SimpleHTTPServer 8000
 # Access at: http://localhost:8000
 ```
 
-### Option 2: Node.js HTTP Server
-```bash
-# Install http-server globally (one time setup)
-npm install -g http-server
-
-# Navigate to website directory
-cd /path/to/sarahnina.com
-
-# Start server with CORS enabled
-http-server -p 8000 --cors
-
-# Access at: http://localhost:8000
-```
-
-### Option 3: PHP Built-in Server
-```bash
-# Navigate to website directory
-cd /path/to/sarahnina.com
-
-# Start PHP server
-php -S localhost:8000
-
-# Access at: http://localhost:8000
-```
-
-### Option 4: Apache/Nginx
-Place the entire `sarahnina.com` directory in your web server's document root:
-- **Apache**: `/var/www/html/sarahnina.com`  
-- **Nginx**: `/usr/share/nginx/html/sarahnina.com`
-
-Configure virtual host as needed.
-
 ## Artwork Collections
 
 - **MATRONITA**: Mystical feminine divine series (2 high-res images)
@@ -146,12 +114,12 @@ Configure virtual host as needed.
 3. **Premium Quality** (high-res/premium/): 255KB-1.2MB - High quality (q_100)
 4. **Original Quality** (high-res/originals/): 64KB-7.4MB - Maximum available quality
 
-### Color Palette (Extracted from Original Site)
-- **Primary Background**: `rgb(229,229,228)` - Light gray
-- **Content Sections**: `rgb(239,218,206)` - Warm cream
-- **Text Primary**: `rgb(0,0,0)` - Pure black
-- **Accent Brown**: `rgb(168,96,55)` - Warm brown accents
-- **Button Blue**: `rgb(61,155,233)` - Interactive elements
+### Color Palette (Custom Black Theme)
+- **Primary Background**: `rgb(0,0,0)` - Pure black
+- **Content Sections**: `rgb(30,30,30)` - Dark gray
+- **Text Primary**: `rgb(255,255,255)` - Pure white
+- **Accent Golden**: `rgb(220,150,100)` - Warm golden accents
+- **Button Colors**: Golden background with black text
 
 ### Typography Hierarchy
 - **H1**: 88px (Desktop) / 48px (Mobile) - Questrial
@@ -286,12 +254,13 @@ Upload all files to your web hosting provider's public folder
 - **Alt Texts**: Descriptive alt texts for all images
 - **Canonical URLs**: Proper URL structure
 
-### Accessibility
-- **Keyboard Navigation**: Full keyboard accessibility
+### Accessibility (Enhanced for Black Theme)
+- **Keyboard Navigation**: Full keyboard accessibility with visible focus states
 - **Screen Reader**: ARIA labels and semantic markup
-- **Color Contrast**: WCAG AA compliant color ratios
-- **Responsive Text**: Scalable typography
-- **Focus Indicators**: Visible focus states
+- **Color Contrast**: Exceptional contrast ratios (21:1 black-to-white, 8:1+ for accents)
+- **Dark Theme Optimized**: Reduces eye strain in low-light conditions
+- **Golden Accents**: High contrast warm accent color for better visibility
+- **Focus Indicators**: Golden focus states for excellent visibility
 
 ## File Size Summary
 
@@ -332,10 +301,11 @@ open http://localhost:8000
 This complete mirror preserves the original Sarah Nina Meridor website design and content from https://www.sarahnina.com/. All styling, typography, and visual elements have been extracted and replicated from the original Wix site.
 
 **Key Achievements:**
-- ✅ Complete visual fidelity to original site
+- ✅ Complete visual fidelity with enhanced black theme
 - ✅ All 43 images downloaded and organized  
 - ✅ Original fonts (Questrial/Raleway) served locally
-- ✅ Authentic color palette and styling preserved
+- ✅ Custom black theme with golden accents for premium look
+- ✅ Exceptional accessibility with 21:1 contrast ratios
 - ✅ High-resolution images for print quality
 - ✅ Mobile-responsive design maintained
 - ✅ No external dependencies

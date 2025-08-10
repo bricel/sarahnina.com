@@ -15,7 +15,7 @@ body {
     font-family: 'Questrial', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
-    background-color: var(--bg-light);
+    background-color: var(--bg-dark);
 }
 
 /* Site Container */
@@ -307,10 +307,11 @@ body {
 }
 
 .contact-info {
-    background: var(--bg-cream);
+    background: var(--bg-content);
     padding: 60px 40px;
     border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(var(--color_16), 0.2);
     text-align: left;
 }
 
@@ -343,7 +344,7 @@ body {
 }
 
 .contact-method a {
-    color: var(--accent-brown);
+    color: var(--accent-golden);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -417,8 +418,8 @@ body {
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--accent-brown);
-    background: white;
+    border-color: var(--accent-golden);
+    background: rgba(var(--color_32), 0.8);
 }
 
 .form-group textarea {
