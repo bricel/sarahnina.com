@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initSlideshow();
     initSmoothScrolling();
     initAnimations();
+    initLightbox();
     
     /**
      * Navigation functionality

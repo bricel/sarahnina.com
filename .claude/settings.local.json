@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.sarahnina.com)",
+      "Bash(mkdir:*)",
+      "Bash(curl:*)",
+      "Bash(grep:*)",
+      "Bash(wget:*)"
+    ],
+    "deny": []
+  }
+}
